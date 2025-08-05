@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Container with Close</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff0f6;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .ImgBorder {
+      position: relative;
+      display: inline-block;
+      border: 4px solid #ffb3d9;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff9fb;
+      box-shadow: 0 6px 10px rgba(255, 153, 204, 0.4);
+    }
+
+    .ImgBorder img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background-color: #ffb3d9;
+      border: 2px solid #ff99cc;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      font-weight: bold;
+      color: #5e005e;
+      cursor: pointer;
+      text-align: center;
+      line-height: 18px;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    .close-button:hover {
+      background-color: #ff99cc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ImgBorder" id="image-container">
+    <div class="close-button" onclick="document.getElementById('image-container').remove()">×</div>
+    <img src="../img/designs/1.jpg" alt="Example Image">
+  </div>
+
+</body>
+</html>

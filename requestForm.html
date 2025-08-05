@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Request Form</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="warper">
+            <!-- Left column -->
+            <div class="left-col">
+                <!-- Navbar window -->
+                <div class="window custom tall navbar-win">
+                    <div class="title-bar">
+                        <div class="title-bar-text">🌸 Navbar.exe</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body menu-body">
+                        <h4>-- Page--</h4>
+                        <button class="button-pink" onclick="window.location.href='#'">Main</button>
+                        <button class="button-pink" onclick="window.location.href='shop.html'">Shop</button>
+                        <hr />
+                        <h4>-- Links--</h4>
+                        <button class="button-pink" onclick="window.location.href='socials.html'">Socials</button>
+                        <button class="button-pink" onclick="window.location.href='mocha.html'">Mocha</button>
+                    </div>
+                </div>
+
+                <!-- Notes window -->
+                <div class="window custom short">
+                    <div class="title-bar">
+                        <div class="title-bar-text">💭 Notes.txt</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p>
+                            You can leave me a message here! Whether it's a custom request or a few words of
+                            appreciation! <strong>&lt;3</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="right-col">
+                <div class="window custom short col-1">
+                    <div class="title-bar">
+                        <div class="title-bar-text">☁️ contact.exe</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="window-body">
+                            <div class="warper-window">
+                                <div class="about-content">
+                                    <img class="choco-heart" src="img/choco-heart.webp" alt="choco-heart">
+                                </div>
+
+                                <div class="about-content">
+                                    <h1 id="form-title">Leave me a message!</h1>
+                                    <form class="styled-form" name="contact" method="POST" data-netlify="true">
+                                        <!-- Required hidden input for Netlify bot to detect form -->
+                                        <input type="hidden" name="form-name" value="contact" />
+
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="name" required>
+
+                                        <label for="message">Message:</label>
+                                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                                        <button type="submit" class="button-pink">Send</button>
+                                    </form>
+
+                                </div>
+
+                                <div class="image-row">
+                                    <img src="img/choco_hello.png" alt="Hello Choco">
+                                    <img src="img/choco_dead.png" alt="Dead Choco">
+                                    <img src="img/choco_welc.png" alt="Welcome Choco">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type="module" src="js/discordDisplay.js"></script> -->
+    <script type="module" src="js/sendReq.js"></script>
+</body>
+
+</html>
