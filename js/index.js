@@ -1,5 +1,6 @@
 // main.js
 import ShowImage from './ImagePreview.js';
+import ShowToast from './Toast.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const ImgBtn = document.getElementById('imgBtn1');
@@ -25,5 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ImgBtn4.onclick = (event) => {
     const url = event.target.src; 
     ShowImage(url);
+  };
+
+  const Seemore = document.getElementById('seemore');
+  Seemore.onclick = () => {
+    ShowToast('More designs coming soon! Submit a custom request instead. <3');
   };
 });
